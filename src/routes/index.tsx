@@ -491,7 +491,7 @@ function Index() {
       {/* HEADER */}
       <header className="sticky top-0 z-40 border-b border-border/60 bg-cream/80 backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6">
-          <Logo className="h-8 sm:h-10" />
+          <Logo className="h-12 sm:h-16" />
           <nav className="hidden items-center gap-7 text-sm font-medium text-foreground/80 lg:flex">
             <a href="#problem" className="hover:text-herb">Problem</a>
             <a href="#how" className="hover:text-herb">How It Works</a>
@@ -813,7 +813,7 @@ function Index() {
           <div className="mt-12 overflow-hidden rounded-[2rem] bg-card shadow-soft ring-1 ring-herb-deep/10">
             <div className="grid md:grid-cols-2">
               <div className="bg-beige p-8 sm:p-10">
-                <Logo className="mx-auto h-8 md:mx-0" />
+                <Logo className="mx-auto h-12 md:mx-0" />
                 <div className="mt-6 overflow-hidden rounded-2xl">
                   <img src={productImg} alt="Motherveda pack" loading="lazy" width={1280} height={1280} className="h-full w-full object-cover" />
                 </div>
@@ -876,7 +876,7 @@ function Index() {
       <section className="bg-herb relative overflow-hidden py-8 text-primary-foreground sm:py-12">
         <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(circle at 80% 20%, white 1px, transparent 1px)", backgroundSize: "32px 32px" }} />
         <div className="relative mx-auto max-w-4xl px-4 text-center sm:px-6">
-          <Logo className="mx-auto h-10" />
+          <Logo className="mx-auto h-14" />
           <h2 className="mt-6 text-4xl font-black leading-tight sm:text-5xl md:text-6xl">
             Ab Heavy Morning Ko <span className="text-gold">Normal Mat Samjho</span>
           </h2>
@@ -899,7 +899,7 @@ function Index() {
       <footer className="bg-ink py-12 text-cream/80">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="flex flex-col items-center gap-6 md:flex-row md:justify-between">
-            <Logo className="h-9" />
+            <Logo className="h-12" />
             <nav className="flex flex-wrap justify-center gap-5 text-sm">
               <a href="#problem">Problem</a>
               <a href="#how">How It Works</a>
