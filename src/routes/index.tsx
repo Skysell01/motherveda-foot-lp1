@@ -491,7 +491,7 @@ function Index() {
       {/* HEADER */}
       <header className="sticky top-0 z-40 border-b border-border/60 bg-cream/80 backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6">
-          <Logo className="h-12 sm:h-16" />
+          <Logo className="h-16 sm:h-24" />
           <nav className="hidden items-center gap-7 text-sm font-medium text-foreground/80 lg:flex">
             <a href="#problem" className="hover:text-herb">Problem</a>
             <a href="#how" className="hover:text-herb">How It Works</a>
