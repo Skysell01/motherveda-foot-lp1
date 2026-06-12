@@ -1,17 +1,17 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState, useEffect } from "react";
 import { submitLead } from "@/lib/actions";
-import logo from "@/assets/motherveda-logo.png";
+import logo from "@/assets/jeevantatva-logo.svg";
 import heroImg from "@/assets/hero-transformation.jpg";
 import detoxDemoImg from "@/assets/detox-patch-demo.jpg";
-import productBoxImg from "@/assets/product-box.png";
+import productBoxImg from "@/assets/product-box.jpg";
 import gymImg from "@/assets/gym-frustration.jpg";
 import dietImg from "@/assets/dieting-frustration.jpg";
 import nightImg from "@/assets/night-routine.png";
 import doctorAvatar from "@/assets/doctor-avatar.png";
 
 import beforeAfterImg from "@/assets/before-after.gif";
-import productImg from "@/assets/product-shot.png";
+import productImg from "@/assets/product-shot.jpg";
 import review1Img from "@/assets/review-1.png";
 import review2Img from "@/assets/review-2.png";
 import review3Img from "@/assets/review-3.png";
@@ -22,13 +22,13 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Motherveda Detox Foot Pads – Lighter Mornings, ₹999/Month" },
+      { title: "Jeevan Tatva Detox Foot Pads – Lighter Mornings, ₹999/Month" },
       {
         name: "description",
         content:
-          "Gym jaake bhi weight loss nahi ho raha? Motherveda Detox Foot Pads — overnight wellness routine for lighter, fresher mornings. 1 month supply ₹999.",
+          "Gym jaake bhi weight loss nahi ho raha? Jeevan Tatva Detox Foot Pads — overnight wellness routine for lighter, fresher mornings. 1 month supply ₹999.",
       },
-      { property: "og:title", content: "Motherveda Detox Foot Pads – ₹999" },
+      { property: "og:title", content: "Jeevan Tatva Detox Foot Pads – ₹999" },
       {
         property: "og:description",
         content:
@@ -45,7 +45,7 @@ export const Route = createFileRoute("/")({
   }),
 });
 
-const OPEN_ORDER_EVENT = "motherveda:open-order";
+const OPEN_ORDER_EVENT = "jeevantatva:open-order";
 
 function openOrder(e?: React.MouseEvent) {
   if (e) e.preventDefault();
@@ -71,7 +71,7 @@ function CTAButton({ children, className = "", variant = "primary" }: { children
 }
 
 function Logo({ className = "h-10" }: { className?: string }) {
-  return <img src={logo} alt="Motherveda" className={`${className} w-auto`} />;
+  return <img src={logo} alt="Jeevan Tatva" className={`${className} w-auto`} />;
 }
 
 function Badge({ children }: { children: React.ReactNode }) {
@@ -222,7 +222,7 @@ function Index() {
     if (isSubmitting) return;
 
     // Client-side 24hr check via localStorage
-    const STORAGE_KEY = "motherveda_lead_submitted";
+    const STORAGE_KEY = "jeevantatva_lead_submitted";
     const stored = localStorage.getItem(STORAGE_KEY);
     if (stored) {
       try {
@@ -245,7 +245,7 @@ function Index() {
           phone: form.contact,
           address: form.address,
           pincode: form.pincode,
-          productName: "Motherveda Detox Foot Pads",
+          productName: "Jeevan Tatva Detox Foot Pads",
           price: "999",
           submittedAt: new Date().toISOString(),
         },
@@ -409,7 +409,7 @@ function Index() {
           Real Users. Real Night Routine. <span className="text-herb">Real Fat-Loss Support.</span>
         </SectionTitle>
         <p className="mx-auto mt-4 max-w-2xl text-center text-base leading-relaxed text-muted-foreground">
-          Customers who added Motherveda Foot Detox Pads to their bedtime routine shared how their body felt lighter, fat-loss journey got a push, and mornings became fresher and more relaxed.
+          Customers who added Jeevan Tatva Foot Detox Pads to their bedtime routine shared how their body felt lighter, fat-loss journey got a push, and mornings became fresher and more relaxed.
         </p>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -452,7 +452,7 @@ function Index() {
                   <div className="mt-4 overflow-hidden rounded-2xl border border-border">
                     <img
                       src={t.proof}
-                      alt={`${t.n} ka Motherveda night routine proof`}
+                      alt={`${t.n} ka Jeevan Tatva night routine proof`}
                       loading="lazy"
                       className="h-40 w-full object-cover"
                     />
@@ -463,7 +463,7 @@ function Index() {
                   <span className="rounded-full bg-beige px-3 py-1 font-semibold text-herb">
                     🌙 {t.usage}
                   </span>
-                  <span className="text-muted-foreground">Motherveda Pads</span>
+                  <span className="text-muted-foreground">Jeevan Tatva Pads</span>
                 </div>
               </article>
             );
@@ -527,13 +527,13 @@ function Index() {
             </p>
             <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
               Dieting karke thak gaye? Heavy body, bloating aur tired mornings aapki fat-loss
-              journey ko slow feel kara sakte hain. <b className="text-foreground">Motherveda Detox Foot Pads</b> ek
+              journey ko slow feel kara sakte hain. <b className="text-foreground">Jeevan Tatva Detox Foot Pads</b> ek
               simple overnight wellness routine hai jo aapko morning mein <i>lighter, fresher</i> aur
               more active feel karne mein support karta hai.
             </p>
 
             <div className="mt-5 overflow-hidden rounded-3xl shadow-soft ring-1 ring-herb-deep/10 md:hidden">
-              <img src={heroImg} alt="Before and after transformation feeling with Motherveda" width={1536} height={1024} className="h-full w-full object-cover" />
+              <img src={heroImg} alt="Before and after transformation feeling with Jeevan Tatva" width={1536} height={1024} className="h-full w-full object-cover" />
             </div>
 
             <ul className="mx-auto mt-6 grid max-w-md gap-2.5 text-sm font-medium text-foreground sm:text-base md:mx-0 md:max-w-none">
@@ -572,7 +572,7 @@ function Index() {
 
         <div className="relative mx-auto max-w-7xl px-4 pb-6 sm:px-6">
           <div className="mx-auto max-w-3xl overflow-hidden rounded-3xl shadow-soft ring-1 ring-herb-deep/10">
-            <img src={productBoxImg} alt="Motherveda Foot Detox Patch product box with 30 pads" width={1280} height={1280} className="h-full w-full object-cover" loading="lazy" />
+            <img src={productBoxImg} alt="Jeevan Tatva Foot Detox Patch product box with 30 pads" width={1280} height={1280} className="h-full w-full object-cover" loading="lazy" />
           </div>
         </div>
 
@@ -665,7 +665,7 @@ function Index() {
               <FatLossTag />
             </div>
             <h2 className="mt-4 text-3xl font-bold leading-tight text-foreground sm:text-4xl md:text-5xl">
-              Meet <span className="text-herb">Motherveda Detox Foot Pads</span>
+              Meet <span className="text-herb">Jeevan Tatva Detox Foot Pads</span>
             </h2>
             <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
               Raat ko sone se pehle foot pads apply karo. Ye simple overnight wellness routine
@@ -815,12 +815,12 @@ function Index() {
               <div className="bg-beige p-8 sm:p-10">
                 <Logo className="mx-auto h-12 md:mx-0" />
                 <div className="mt-6 overflow-hidden rounded-2xl">
-                  <img src={productImg} alt="Motherveda pack" loading="lazy" width={1280} height={1280} className="h-full w-full object-cover" />
+                  <img src={productImg} alt="Jeevan Tatva pack" loading="lazy" width={1280} height={1280} className="h-full w-full object-cover" />
                 </div>
               </div>
               <div className="p-8 text-center sm:p-10 md:text-left">
                 <Badge>Best Value Pack</Badge>
-                <h3 className="mt-4 font-display text-3xl font-bold text-foreground">Motherveda Detox Foot Pads</h3>
+                <h3 className="mt-4 font-display text-3xl font-bold text-foreground">Jeevan Tatva Detox Foot Pads</h3>
                 <p className="text-sm text-muted-foreground">1 Month Supply · 30 Pads</p>
 
                 <div className="mt-5 flex items-end justify-center gap-3 md:justify-start">
@@ -881,7 +881,7 @@ function Index() {
             Ab Heavy Morning Ko <span className="text-gold">Normal Mat Samjho</span>
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-base sm:text-lg">
-            Start Motherveda Detox Foot Pads 1 month routine and support your fat-loss journey with
+            Start Jeevan Tatva Detox Foot Pads 1 month routine and support your fat-loss journey with
             lighter, fresher mornings.
           </p>
           <button type="button" onClick={openOrder} className="mt-8 inline-flex items-center justify-center rounded-full bg-gold px-10 py-5 text-lg font-bold text-ink shadow-soft animate-cta-shake hover:scale-[1.03] transition-transform">
@@ -907,7 +907,7 @@ function Index() {
               <a href="#faq">FAQ</a>
             </nav>
           </div>
-          <p className="mt-6 text-center text-xs text-cream/40">© {new Date().getFullYear()} Motherveda. All rights reserved.</p>
+          <p className="mt-6 text-center text-xs text-cream/40">© {new Date().getFullYear()} Jeevan Tatva. All rights reserved.</p>
         </div>
       </footer>
 

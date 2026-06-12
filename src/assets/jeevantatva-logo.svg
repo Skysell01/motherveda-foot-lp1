@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 85" width="100%" height="100%">
+  <!-- Leaves Icon -->
+  <g transform="translate(30, 42)">
+    <!-- Center Leaf -->
+    <path d="M 0 5 C -5 -5 -5 -20 0 -28 C 5 -20 5 -5 0 5 Z" fill="#2E7D32" />
+    <!-- Left Leaf -->
+    <path d="M -2 7 C -12 3 -20 -8 -20 -18 C -11 -16 -4 -7 -2 7 Z" fill="#4CAF50" />
+    <!-- Right Leaf -->
+    <path d="M 2 7 C 12 3 20 -8 20 -18 C 11 -16 4 -7 2 7 Z" fill="#4CAF50" />
+    <!-- Stem -->
+    <path d="M 0 5 Q 0 15 -2 20" stroke="#2E7D32" stroke-width="2" fill="none" stroke-linecap="round" />
+  </g>
+  <!-- Text "Jeevan Tatva" -->
+  <text x="80" y="42" font-family="'Fraunces', 'Georgia', serif" font-size="30" font-weight="900" fill="#1B4332" letter-spacing="0.5">Jeevan Tatva</text>
+  <!-- TM symbol -->
+  <text x="270" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" font-weight="bold" fill="#1B4332">TM</text>
+  <!-- Text "Presented by nature" -->
+  <text x="80" y="58" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="500" fill="#2E7D32" letter-spacing="1.5">Presented by nature</text>
+</svg>
