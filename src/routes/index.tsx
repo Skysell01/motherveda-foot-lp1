@@ -656,7 +656,7 @@ function Index() {
         <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 md:grid-cols-2">
           <div className="order-2 md:order-1">
             <div className="overflow-hidden rounded-3xl bg-beige shadow-card">
-              <img src={productImg} alt="Motherveda Detox Foot Pads product" loading="lazy" width={1280} height={1280} className="h-full w-full object-cover" />
+              <img src={productImg} alt="Jeevan Tatva Detox Foot Pads product" loading="lazy" width={1280} height={1280} className="h-full w-full object-cover" />
             </div>
           </div>
           <div className="order-1 text-center md:order-2 md:text-left">
@@ -730,7 +730,7 @@ function Index() {
             Ye Direct Fat Burner Nahi — But <span className="text-herb">Fat-Loss Journey</span> Ko Strong Support Deta Hai
           </SectionTitle>
           <p className="mx-auto mt-5 max-w-3xl text-center text-muted-foreground">
-            Motherveda Detox Foot Pads fat ko overnight melt karne ka claim nahi karta. Ye aapke
+            Jeevan Tatva Detox Foot Pads fat ko overnight melt karne ka claim nahi karta. Ye aapke
             wellness routine ko support karta hai by helping you feel lighter, less sluggish, and
             more ready to move — which can support your overall fat-loss lifestyle.
           </p>
@@ -782,7 +782,7 @@ function Index() {
             </h2>
             <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
               Agar subah uthte hi body heavy, puffy aur tired feel hoti hai, toh fat-loss journey
-              mentally aur physically hard lagti hai. Motherveda Detox Foot Pads ek simple support
+              mentally aur physically hard lagti hai. Jeevan Tatva Detox Foot Pads ek simple support
               routine hai jo aapko lighter start dene mein help karta hai.
             </p>
             <div className="mt-7 grid gap-3 sm:grid-cols-2">
