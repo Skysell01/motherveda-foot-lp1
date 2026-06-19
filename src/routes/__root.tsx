@@ -8,6 +8,7 @@ import {
   Scripts,
 } from "@tanstack/react-router";
 
+import { META_PIXEL_INIT_SCRIPT, META_PIXEL_NOSCRIPT_SRC } from "../lib/meta-pixel";
 import appCss from "../styles.css?url";
 
 function NotFoundComponent() {
@@ -105,18 +106,7 @@ function RootShell({ children }: { children: React.ReactNode }) {
         <HeadContent />
         <script
           dangerouslySetInnerHTML={{
-            __html: `
-              !function(f,b,e,v,n,t,s)
-              {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-              if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-              n.queue=[];t=b.createElement(e);t.async=!0;
-              t.src=v;s=b.getElementsByTagName(e)[0];
-              s.parentNode.insertBefore(t,s)}(window, document,'script',
-              'https://connect.facebook.net/en_US/fbevents.js');
-              fbq('init', '929169270106539');
-              fbq('track', 'PageView');
-            `,
+            __html: META_PIXEL_INIT_SCRIPT,
           }}
         />
         <noscript>
@@ -124,7 +114,7 @@ function RootShell({ children }: { children: React.ReactNode }) {
             height="1"
             width="1"
             style={{ display: "none" }}
-            src="https://www.facebook.com/tr?id=929169270106539&ev=PageView&noscript=1"
+            src={META_PIXEL_NOSCRIPT_SRC}
           />
         </noscript>
       </head>

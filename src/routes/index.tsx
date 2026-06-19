@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState, useEffect } from "react";
 import { submitLead } from "@/lib/actions";
+import { trackEvent } from "@/lib/meta-pixel";
 import logo from "@/assets/jeevantatva-logo.svg";
 import heroImg from "@/assets/hero-transformation.jpg";
 import detoxDemoImg from "@/assets/detox-patch-demo.jpg";
@@ -193,7 +194,17 @@ function Index() {
   const timer = useCountdown(30);
 
   useEffect(() => {
-    const handler = () => setOrderOpen(true);
+    const handler = () => {
+      setOrderOpen(true);
+      try {
+        trackEvent("InitiateCheckout", {
+          content_name: "motherveda_foot_detox_patch",
+          content_category: "detox_patch",
+        });
+      } catch (err) {
+        console.error("Failed to track pixel InitiateCheckout event:", err);
+      }
+    };
     window.addEventListener(OPEN_ORDER_EVENT, handler);
     return () => window.removeEventListener(OPEN_ORDER_EVENT, handler);
   }, []);
@@ -268,9 +279,25 @@ function Index() {
       timestamp: Date.now(),
     }));
 
-    // Fire Meta Pixel Lead event
-    if (typeof window !== "undefined" && (window as any).fbq) {
-      (window as any).fbq("track", "Lead");
+    // Fire Meta Pixel Lead and Purchase events on successful order placement
+    try {
+      trackEvent("Lead", {
+        content_name: "motherveda_foot_detox_patch",
+        content_category: "detox_patch",
+      });
+    } catch (err) {
+      console.error("Failed to track pixel Lead event:", err);
+    }
+
+    try {
+      trackEvent("Purchase", {
+        content_name: "motherveda_foot_detox_patch",
+        content_category: "detox_patch",
+        value: 999.00,
+        currency: "INR",
+      });
+    } catch (err) {
+      console.error("Failed to track pixel Purchase event:", err);
     }
 
     setOrderOpen(false);
